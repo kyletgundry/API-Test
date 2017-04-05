@@ -1,0 +1,12 @@
+<h2>Articles:</h2>
+<div class="row">
+  <% @news["articles"].each do |article| %>
+    <div class="col-md-4">
+      <div class="well well-sm">
+        <h3 id="article_title"><%= article["title"] %></h3>
+        <img src="<%= article["urlToImage"] %>" alt="">
+      </div>
+    </div>
+  <% end %>
+</div>
+

@@ -1,0 +1,5 @@
+<h1>Crimes in Chicago:</h1>
+
+<% @crimes.each do |crime| %>
+  <h3>The following crime was commited <%= crime["primary_type"].downcase %> which is an <%= crime["description"].downcase %> in block <%= crime["block"].downcase %>.</h3>
+<% end %>
